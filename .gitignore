@@ -13,6 +13,6 @@ storage_sql/
 .venv/
 knowledge-loss.ipynb
 langchain-postgres-sqlagent-1.ipynb
-./private.md
+private.md
 
 

@@ -10,6 +10,18 @@ And concrete implementation of [doWHy](https://github.com/py-why/dowhy)
 
 The goal is to make problem debugging in any domain simpler than what it is today.
 
+## Introduction
+
+When we explain a complex concept in white board, we draw some circles and arrows joining them. That in effect is a DAG (direct acyclic graph) - assuming there are no closed cycles. That is quintessence way to express domain knowledge. We can take a DAG and:
+
+1. store it as a __Knowledge Graph__ in a Graph DB with some kind of data
+1. convert it to a __Bayesian Network__ by adding the Conditional Probability Distribution (CPD) to it
+1. convert it to a __Causal model__ (Bayesian Network or a DAG with a little more rigor if needed) with some structural equation
+
+Each of the above options take domain knowledge and helps answer some questions about it.
+
+The [introductory notebook](introduction.ipynb) ties these together. 
+
 ### Naming Convention followed in Causal literature
 
 - v variables - are the treatments. They can be binary or continuous. In the case of continuous abs(beta) defines thier magnitude;
@@ -39,4 +51,6 @@ But, we need to understand a little more how some of them affect the causal path
 - Back door
 - Modifier
 - Colliders 
+
+
 
