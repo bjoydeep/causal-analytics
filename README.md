@@ -12,7 +12,7 @@ The goal is to make problem debugging in any domain simpler than what it is toda
 
 ## Introduction
 
-When we explain a complex concept in white board, we draw some circles and arrows joining them. That in effect is a DAG (direct acyclic graph) - assuming there are no closed cycles. That is quintessence way to express domain knowledge. We can take a DAG and:
+When we explain a complex concept in white board, we draw some circles and arrows joining them. That in effect is a DAG (direct acyclic graph) - assuming there are no closed cycles. That is the quintessential way to express domain knowledge. We can take a DAG and:
 
 1. store it as a __Knowledge Graph__ in a Graph DB with some kind of data
 1. convert it to a __Bayesian Network__ by adding the Conditional Probability Distribution (CPD) to it
