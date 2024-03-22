@@ -39,12 +39,12 @@ The [introductory notebook](introduction.ipynb) ties these together.
 ### Causal Nomenclature describing effects of variables
 
 These names are understood:
-- common causes
-- instrument variables
-- effect modifier
-- front door variables
-- treatment
-- outcome
+- Common causes or `Confounders`
+- Instrument variables
+- Effect modifier or `Covariates`
+- Front door variables or `Mediators`.
+- Treatment
+- Outcome
 
 ## Backdoor
 ### Backdoor Criterion
