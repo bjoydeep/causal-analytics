@@ -24,17 +24,17 @@ The [introductory notebook](introduction.ipynb) ties these together.
 
 ### Naming Convention followed in Causal literature
 
-- v variables - are the treatments. They can be binary or continuous. In the case of continuous abs(beta) defines thier magnitude;
+- v variables - are the `treatments`. They can be binary or continuous. In the case of continuous abs(beta) defines thier magnitude;
 
-- y - is the outcome variable. The generating equation is, y = normal(0, stddev_outcome_noise) + t @ beta [where @ is a numpy matrix multiplication allowing for beta be a vector]
+- y - is the `outcome` variable. The generating equation is, y = normal(0, stddev_outcome_noise) + t @ beta [where @ is a numpy matrix multiplication allowing for beta be a vector]
 
-- W variables - Common Causes. Commonly cause both the treatment and the outcome and are iid. if continuous, they are Norm(mu = Unif(-1,1), sigma = 1)
+- W variables - Common Causes or `Confounders`. Commonly cause both the treatment and the outcome and are iid. if continuous, they are Norm(mu = Unif(-1,1), sigma = 1)
 
 - Z variables - Instrument variables. Each one affects all treatments. i.e. if there is one instrument and two treatments then z0->v0, z0->v1
 
-- X variables - effect modifiers. If continuous, they are Norm(mu = Unif(-1,1), sigma = 1) [x -> y]
+- X variables - effect modifiers or `Covariates`. If continuous, they are Norm(mu = Unif(-1,1), sigma = 1) [x -> y]
 
-- FD variables - Front door variables, v0->FD0->y
+- FD variables - Front door variables, v0->FD0->y. These are called `Mediators`
 
 ### Causal Nomenclature describing effects of variables
 
@@ -46,11 +46,7 @@ These names are understood:
 - treatment
 - outcome
 
-But, we need to understand a little more how some of them affect the causal pathway. To desribe that, causal community groups them by :
-- Confounders
-- Back door
-- Modifier
-- Colliders 
+
 
 
 
