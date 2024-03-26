@@ -14,5 +14,6 @@ storage_sql/
 knowledge-loss.ipynb
 langchain-postgres-sqlagent-1.ipynb
 private.md
+private/
 
 
